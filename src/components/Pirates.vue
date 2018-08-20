@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
-    <h1>PIRATE!</h1>
+    <h1
+      v-for="pirate in pirates"
+      v-bind:key="pirate.name"
+    >
+    {{pirate.name}}</h1>
   </div>
 </template>
 
@@ -8,7 +12,7 @@
 export default {
   name: 'Pirates',
   props: {
-    
+    pirates: String
   }
 };
 </script>

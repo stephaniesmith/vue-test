@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Pirates/>
+    <Pirates :pirates="pirates"/>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import Pirates from './components/Pirates.vue';
 
 export default {
   data() {
-    return pirates;
+    return { pirates };
   },
   name: 'app',
   components: {
